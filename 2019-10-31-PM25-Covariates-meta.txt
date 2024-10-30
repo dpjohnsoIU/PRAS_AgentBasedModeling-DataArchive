@@ -1,0 +1,214 @@
+=========== HEADER =========== Readme.txt for Urban Airshed PM2.5 Exposure Dataset
+Item Handle: [to be added after record is created]
+Documentation written on 10/29/2024
+By Daniel P. Johnson
+Updated <20241029>, by [Daniel P. Johnson]
+
+=========== SUGGESTED DATA CITATION ===========
+
+Please cite this data in the references for any publication which uses it.
+Ex: Daniel P. Johnson, Niranjan Ravi, Gabriel Filippelli, Asrah Heintzelman (2024): Urban Airshed PM2.5 Exposure Dataset. Version 1.0. Indiana University - Indianapolis. Geospatial Dataset. [DOI or Identifier]
+
+For more details, see https://www.datacite.org/services/cite-your-data.html or try the DOI Citation Formatter: http://crosscite.org/citeproc/
+
+=========== PRIMARY STUDY INFORMATION ===========
+
+ACKNOWLEDGEMENTS
+Project title: Agent-Based Modeling for PM2.5 Exposure in Urban Airsheds
+Funding agency: Indiana Space Grant Consortium
+Award Number: [Award Number, if applicable]
+Award Period: 2021 - 2022
+
+Investigator Name: [Daniel P. Johnson, Ph.D.]
+Investigator Institution: Indiana University at Indianapolis (IUI)
+Investigator Address: 425 University Blvd., Indianapolis, IN 46202, Cavanaugh Hall 207a
+Investigator Email: dpjohnso@iu.edu
+Investigator Role: Data Collection, Data Analysis, Data Processing/Cleaning
+Investigator ID (ORCID): 0000-0002-9949-7584
+
+Investigator Name: [Additional Investigator, if any]
+Investigator Institution: [Their Institution]
+Investigator Address: [Their Address]
+Investigator Email: [Their Email Address]
+Investigator Role: [Their Role in Dataset Creation]
+Investigator ID (ORCID): [ORCID ID]
+
+DATE(S) of DATA COLLECTION
+Range: 2018-11-01 to 2019-10-31
+
+GEOGRAPHIC LOCATION(S) of DATA COLLECTION
+Indianapolis, Indiana, USA; specifically within the Pleasant Run Airshed area (approximate GPS coordinates: 39.7684° N, 86.1581° W)
+
+DIRECTORY/FILE NAMING CONVENTIONS
+2019-10-31-PM2.5-Covariates-Dataset.csv
+PRAS_250M_Grid.parquet
+PRAS_Streets.parquet
+PRAS_Buildings.parquet
+
+FILE INFORMATION
+Data files are in CSV format. These files can be opened in any spreadsheet or text editor. Note: The CSV dataset includes both spatial (latitude/longitude) and temporal (date/time) components.
+
+Streets, buildings, and grid files are in GeoParquet format.
+
+ACCESS & SHARING
+
+Licenses/restrictions placed on the data: Open Access under [Specify License, e.g., Creative Commons Attribution 4.0 International License]
+Links to thesis, dissertation, reports, or publications that cite or use the data: [Add links if available]
+Links to publicly accessible locations of the data: [Repository link, e.g., IU ScholarWorks, Data Commons]
+Links/relationships to other data files/sets: [List other related datasets if applicable]
+Was data derived from another source?
+A. Yes, baseline meteorological and land use data were derived from NLDAS, MODIS AOD, NLCD.
+=========== OPTIONAL ===========
+
+RESEARCH AIMS
+This project aims to model PM2.5 exposure in an urban airshed using agent-based models to capture individual movement patterns and simulate exposures in high-risk areas.
+
+METHODS
+General methodology: Simulation using agent-based modeling
+Instruments used for collecting data: Low-cost PA-II-SD PM2.5 sensors, meteorological data from NLDAS, MODIS AOD data
+
+DATA-SPECIFIC INFORMATION
+
+Metadata schema: Ecological Metadata Language (EML), https://eml.ecoinformatics.org/
+
+Parameters and/or variables used in the dataset
+A. ConvFrac
+
+Description: Convective Fraction
+Units: Proportion (0-1)
+B. Energy
+
+Description: Energy Flux
+Units: Watts per square meter (W/m²)
+C. Evaporation
+
+Description: Rate of water evaporation
+Units: Millimeters per day (mm/day)
+D. LongRad
+
+Description: Longwave Radiation
+Units: Watts per square meter (W/m²)
+E. Precipitation
+
+Description: Precipitation amount
+Units: Millimeters (mm)
+F. Pressure
+
+Description: Atmospheric Pressure
+Units: Pascals (Pa)
+G. ShortRadiation
+
+Description: Shortwave Radiation
+Units: Watts per square meter (W/m²)
+H. SpecificHumidity
+
+Description: Specific Humidity
+Units: Grams per kilogram (g/kg)
+I. Temperature
+
+Description: Air Temperature
+Units: Degrees Celsius (°C)
+J. WindU
+
+Description: Wind component in the U (East-West) direction
+Units: Meters per second (m/s)
+K. WindV
+
+Description: Wind component in the V (North-South) direction
+Units: Meters per second (m/s)
+L. Optical47
+
+Description: Optical Depth at 470 nm wavelength
+Units: Dimensionless
+M. Optical55
+
+Description: Optical Depth at 550 nm wavelength
+Units: Dimensionless
+N. Cropland
+
+Description: Proportion of land covered by cropland
+Units: Percentage (%)
+O. DevHighIntens
+
+Description: Developed land with high intensity
+Units: Percentage (%)
+P. DevMedIntens
+
+Description: Developed land with medium intensity
+Units: Percentage (%)
+Q. DevLowIntens
+
+Description: Developed land with low intensity
+Units: Percentage (%)
+R. DevOpenSpace
+
+Description: Developed land categorized as open space
+Units: Percentage (%)
+S. ForestDecid
+
+Description: Proportion of land covered by deciduous forest
+Units: Percentage (%)
+T. ForestEverg
+
+Description: Proportion of land covered by evergreen forest
+Units: Percentage (%)
+U. ForestMixed
+
+Description: Proportion of land covered by mixed forest
+Units: Percentage (%)
+V. GrassHerb
+
+Description: Proportion of land covered by grass and herbaceous plants
+Units: Percentage (%)
+W. OpenWater
+
+Description: Proportion of land covered by open water
+Units: Percentage (%)
+X. Pasture
+
+Description: Proportion of land covered by pasture
+Units: Percentage (%)
+Y. RoadDist
+
+Description: Distance to nearest road
+Units: Meters (m)
+Column headings for tabular data
+FID: Unique Feature Identifier - Sequential ID for each record in the dataset.
+PolygonNum: Polygon Number - Identifier for distinct polygons in the study area.
+Date: Date - Date of data collection or observation, formatted as YYYY-MM-DD.
+ConvFrac: Convective Fraction - Fraction of total rainfall attributed to convective processes.
+Energy: Energy Flux - Measure of energy (e.g., in watts per square meter) within the area.
+Evaporation: Evaporation Rate - Rate of water evaporation from the surface, likely in mm/day.
+LongRad: Longwave Radiation - Incoming longwave radiation at the surface, typically in watts per square meter.
+Precipitation: Precipitation Amount - Total precipitation recorded, likely in millimeters.
+Pressure: Atmospheric Pressure - Surface atmospheric pressure, usually in hPa (hectopascals).
+ShortRadiation: Shortwave Radiation - Incoming shortwave radiation at the surface, in watts per square meter.
+SpecificHumidity: Specific Humidity - Measurement of humidity, indicating water vapor mass per unit air mass (g/kg).
+Temperature: Air Temperature - Ambient temperature, typically measured in degrees Celsius.
+Windu: Wind Speed (U-Component) - Horizontal wind speed component in the east-west direction, in m/s.
+Windv: Wind Speed (V-Component) - Horizontal wind speed component in the north-south direction, in m/s.
+Optical47: Optical Band 47 – AOD Aerosol Optical Depth in 47 µm.
+Optical55: Optical Band 55 – AOD Aerosol Optical Depth 55 µm.
+Cropland: Cropland Area Fraction - Proportion of land cover classified as cropland in the polygon.
+DevHighIntens: Developed High Intensity - Area fraction of highly developed urban regions.
+DevMedIntens: Developed Medium Intensity - Area fraction of medium-density urban development.
+DevLowIntens: Developed Low Intensity - Area fraction of low-density urban development.
+DevOpenSpace: Developed Open Space - Fraction of area designated as open space within developed regions.
+ForestDecid: Deciduous Forest Cover - Proportion of area covered by deciduous forests.
+ForestEverg: Evergreen Forest Cover - Proportion of area covered by evergreen forests.
+ForestMixed: Mixed Forest Cover - Proportion of area covered by mixed forests (both deciduous and evergreen).
+GrassHerb: Grassland/Herbaceous Cover - Proportion of area classified as grassland or herbaceous vegetation.
+OpenWater: Open Water Area - Proportion of area covered by open water bodies.
+Pasture: Pasture Area - Fraction of land used as pasture or grazing land.
+RoadDist: Distance to Road - Distance from the center of the polygon to the nearest road, likely in meters.
+Codes or symbols used to record missing data
+A. Code/symbol: "NA"
+
+Definition: Data not available or missing
+B. Code/symbol: "-9999"
+Definition: No data recorded or null value placeholder
+Other specialized formats or abbreviations used: None
+
+Additional related data collected that was not included in the current data package: [If applicable, specify other related data collected but not included]
+
+=========== CREDITS =========== Template provided by Indiana University UITS Research Storage, Indiana University Bloomington Libraries, IUPUI University Library
